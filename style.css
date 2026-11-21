@@ -1,0 +1,78 @@
+:root {
+    --bg-color: white;
+    --font-color: black;
+    --bg-image: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    color: var(--font-color);
+    background-size: cover;
+    transition: .3s;
+}
+
+.dark-theme {
+    --bg-color: #161616;
+    --font-color: white;
+}
+
+.halloween-theme {
+    --bg-color: #361212;
+    --font-color: #ff9730;
+    --bg-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOe5ddRvjydWzQ4ER7hAQxLrkogP1LqEx-EMIogDmH9Zmdr-IFrbegIuk&s=10")
+}
+
+.newyear-theme {
+    --bg-color: lightblue;
+    --font-color: red;
+    --bg-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3r_iUOFZbSe9gb_s-JA_oOTaQSxntHYE9l21hReT6sAvZLgxfQ8sU7VL&s=10");
+}
+
+.popup-bg {
+    opacity: 0;
+    pointer-events: none;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.767);
+    justify-content: center;
+    align-items: center;
+
+    .popup {
+
+        width: 400px;
+        height: 320px;
+        background-color: white;
+        border-radius: 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+        button {
+            padding: 20px;
+            width: 120px;
+            background-color: gold;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+    }
+
+}
+.popup-bg.show {
+    opacity: 1;
+    pointer-events: show;
+}
+.image-container {
+    margin-top: 15px;
+}

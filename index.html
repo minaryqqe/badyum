@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     
+    <div class="popup-bg">
+        
+        <div class="popup">
+            Вы поняли?
+            <button>Da</button>
+        </div>
+    
+    </div>
+
+
+    <h1>Работа со стилями</h1>
+    <hr>
+    <p>
+        Изменение стилей средствами JS
+    </p>
+    
+    <button class="dark">1</button>
+    
+    <button class="default">2</button>
+    
+    
+    <button class="halloween">3</button>
+ 
+    <button class="newyear">4</button>
+
+    <button onClick="togglePopup()">Открыть всплывающую тему</button>
+
+
+    <div class="image-container"></div>
+    <img src="d.jpg" class="image" alt="">
+
+    <div class="buttons">
+        <button onclick="decrement()">Уменьшить</button>
+        <button onclick="increment()">Увеличить</button>
+    </div>
+
+    <div class="border-setting">
+
+        <select oninput="changeBorder()" class="border-width-select">
+            <option value="0">0</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+
+    <input oninput="changeBorder()" type="color" class="color-select">
+
+    <script src="app.js"></script>
+</body>
+</html
